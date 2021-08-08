@@ -74,11 +74,11 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tkV-Bo-Wmv">
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tkV-Bo-Wmv">
                                 <rect key="frame" x="0.0" y="70" width="375" height="597"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="aC7-je-UOS">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="goalCell" rowHeight="70" id="aC7-je-UOS" customClass="GoalCell" customModule="goalpost_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="24.5" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aC7-je-UOS" id="epV-jp-RCk">
@@ -94,7 +94,7 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZy-b6-AUr">
                                                                     <rect key="frame" x="0.0" y="0.0" width="50" height="25"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="width" constant="50" id="bnO-A5-DQv"/>
+                                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="bnO-A5-DQv"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
                                                                     <nil key="textColor"/>
@@ -153,6 +153,11 @@
                                                 <constraint firstAttribute="bottom" secondItem="Zf2-cc-S1m" secondAttribute="bottom" constant="8" id="fWp-JI-bwf"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="goalDescriptionLbl" destination="p2z-TH-u0J" id="A5e-rV-J3l"/>
+                                            <outlet property="goalProgressLbl" destination="Zf2-cc-S1m" id="fUj-Le-xdC"/>
+                                            <outlet property="goalTypeLbl" destination="mn8-Lq-pBl" id="Uhv-NY-lfN"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
