@@ -43,6 +43,9 @@
                                             <constraint firstAttribute="width" constant="35" id="KLz-ru-WPD"/>
                                         </constraints>
                                         <state key="normal" image="addGoal"/>
+                                        <connections>
+                                            <action selector="addGoalBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q6n-cG-tAb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.42745098039215684" green="0.73725490196078436" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -71,17 +74,38 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tkV-Bo-Wmv">
+                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="aC7-je-UOS">
+                                        <rect key="frame" x="0.0" y="24.5" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aC7-je-UOS" id="epV-jp-RCk">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vtv-4n-eWI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7ED-uJ-7yu"/>
+                            <constraint firstItem="tkV-Bo-Wmv" firstAttribute="top" secondItem="8Np-gR-oqQ" secondAttribute="bottom" id="8tq-GP-60z"/>
+                            <constraint firstItem="tkV-Bo-Wmv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TuM-Ng-cIX"/>
                             <constraint firstItem="8Np-gR-oqQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VJ6-K2-Dc1"/>
                             <constraint firstItem="vtv-4n-eWI" firstAttribute="top" secondItem="8Np-gR-oqQ" secondAttribute="bottom" constant="75" id="hl5-Oh-wRN"/>
+                            <constraint firstItem="tkV-Bo-Wmv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ioo-XC-cNC"/>
                             <constraint firstItem="8Np-gR-oqQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kUY-wh-6GC"/>
+                            <constraint firstItem="tkV-Bo-Wmv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="udz-2D-r15"/>
                             <constraint firstItem="8Np-gR-oqQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vrT-2i-qxk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="tkV-Bo-Wmv" id="x99-Cy-6l5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
