@@ -27,7 +27,7 @@ class CreateGoalVC: UIViewController {
     @IBAction func longTermBtnIsTapped(_ sender: Any) {
     }
     @IBAction func backBtnIsTapped(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        dismissDetail()
     }
     
 }
