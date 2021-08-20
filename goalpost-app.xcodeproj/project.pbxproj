@@ -19,6 +19,7 @@
 		9FDBB69B26D02AF300634064 /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDBB69A26D02AF300634064 /* CreateGoalVC.swift */; };
 		9FDBB69D26D0362E00634064 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDBB69C26D0362E00634064 /* UIViewControllerExt.swift */; };
 		9FDBB69F26D03E3200634064 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDBB69E26D03E3200634064 /* UIViewExt.swift */; };
+		9FDBB6A126D043E800634064 /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDBB6A026D043E800634064 /* UIButtonExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		9FDBB69A26D02AF300634064 /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
 		9FDBB69C26D0362E00634064 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		9FDBB69E26D03E3200634064 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		9FDBB6A026D043E800634064 /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			children = (
 				9FDBB69C26D0362E00634064 /* UIViewControllerExt.swift */,
 				9FDBB69E26D03E3200634064 /* UIViewExt.swift */,
+				9FDBB6A026D043E800634064 /* UIButtonExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FDBB69F26D03E3200634064 /* UIViewExt.swift in Sources */,
+				9FDBB6A126D043E800634064 /* UIButtonExt.swift in Sources */,
 				9F8C0EA626C017A5001CFF96 /* GoalsVC.swift in Sources */,
 				9F8C0EA226C017A5001CFF96 /* AppDelegate.swift in Sources */,
 				9FDBB69D26D0362E00634064 /* UIViewControllerExt.swift in Sources */,

@@ -187,7 +187,7 @@
         <!--Create GoalVC-->
         <scene sceneID="SKQ-29-3YG">
             <objects>
-                <viewController storyboardIdentifier="CreateGoalVC" id="foD-8s-QCa" customClass="CreateGoalVC" customModule="goalpost_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateGoalVC" modalPresentationStyle="fullScreen" id="foD-8s-QCa" customClass="CreateGoalVC" customModule="goalpost_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c5O-Pf-0jI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -322,7 +322,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MbQ-tK-Eiw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653.60000000000002" y="71.514242878560722"/>
+            <point key="canvasLocation" x="647" y="72"/>
         </scene>
     </scenes>
     <resources>
